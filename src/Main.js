@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Card from './component/Card'
+import { createBrowserRouter } from 'react-router-dom';
 function Main() {
     // let dataval = data;
     // console.log(dataval);

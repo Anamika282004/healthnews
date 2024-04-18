@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Card from './component/Card'
-import { createBrowserRouter } from 'react-router-dom';
+import Shimmer from './component/Shimmer';
 function Main() {
     // let dataval = data;
     // console.log(dataval);
@@ -19,6 +19,7 @@ function Main() {
   useEffect(() => {
       data1();
   }, []); 
+ if(dataval.length===0) return <Shimmer/>
   return (
     <div>
         {store}
